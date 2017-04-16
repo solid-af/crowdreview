@@ -1,4 +1,11 @@
 defmodule CrowdReview.Web.Application do
+  @moduledoc """
+  The CrowdReview web application.
+
+  The crowdreview web api lives in this application.
+
+  Exposes API to clients such as the `Main.elm` application.
+  """
   use Application
 
   def start(_type, _args) do
