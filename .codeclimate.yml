@@ -1,2 +1,2 @@
 exclude_paths:
-- "apps/crowdreview_web/assets/elm/vendor/main.js"
+- "vendor/"
