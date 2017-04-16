@@ -36,7 +36,7 @@ defmodule CrowdReview.Web.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_crowdreview_web_key",
-    signing_salt: "T2Hssqqz"
+    signing_salt: "+t3GvyVc"
 
   plug CrowdReview.Web.Router
 

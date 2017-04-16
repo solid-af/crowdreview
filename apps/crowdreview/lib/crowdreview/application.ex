@@ -13,7 +13,7 @@ defmodule CrowdReview.Application do
     import Supervisor.Spec, warn: false
 
     Supervisor.start_link([
-
+      worker(CrowdReview.Repo, []),
     ], strategy: :one_for_one, name: CrowdReview.Supervisor)
   end
 end

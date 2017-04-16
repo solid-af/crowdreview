@@ -7,12 +7,13 @@ use Mix.Config
 
 # General application configuration
 config :crowdreview_web,
-  namespace: CrowdReview.Web
+  namespace: CrowdReview.Web,
+  ecto_repos: [CrowdReview.Repo]
 
 # Configures the endpoint
 config :crowdreview_web, CrowdReview.Web.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "sEjiOUyez6PyHkCH0tF+OccN1I4yEm0QnJOk+sGw8/lH4RLwifbpkMAKrf8ORPCX",
+  secret_key_base: "vD6RhisoX5YrMKpY1y9RJC8PRfCb8bD2JLuHpeHqcnkTJ8VbbwvEQ4xN0rVbAoHh",
   render_errors: [view: CrowdReview.Web.ErrorView, accepts: ~w(html json)],
   pubsub: [name: CrowdReview.Web.PubSub,
            adapter: Phoenix.PubSub.PG2]
