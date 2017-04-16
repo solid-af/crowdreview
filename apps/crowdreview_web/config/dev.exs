@@ -30,4 +30,15 @@ config :crowdreview_web, CrowdReview.Web.Endpoint,
 # configured to run both http and https servers on
 # different ports.
 
+# Watch static and templates for browser reloading.
+config :crowdreview_web, CrowdReview.Web.Endpoint,
+  live_reload: [
+    patterns: [
+      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      ~r{priv/gettext/.*(po)$},
+      ~r{lib/crowdreview_web/views/.*(ex)$},
+      ~r{lib/crowdreview_web/templates/.*(eex)$}
+    ]
+  ]
+
 

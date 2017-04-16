@@ -12,8 +12,8 @@ config :crowdreview_web,
 # Configures the endpoint
 config :crowdreview_web, CrowdReview.Web.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "qZfjoAJfciZsPhZpGOn3L5W4OfLmmvFIjgs7tgzWBc7U2cychIB4MTtqup2Vfho6",
-  render_errors: [view: CrowdReview.Web.ErrorView, accepts: ~w(json)],
+  secret_key_base: "sEjiOUyez6PyHkCH0tF+OccN1I4yEm0QnJOk+sGw8/lH4RLwifbpkMAKrf8ORPCX",
+  render_errors: [view: CrowdReview.Web.ErrorView, accepts: ~w(html json)],
   pubsub: [name: CrowdReview.Web.PubSub,
            adapter: Phoenix.PubSub.PG2]
 

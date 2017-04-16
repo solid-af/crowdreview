@@ -34,8 +34,10 @@ defmodule CrowdReview.Web.Mixfile do
   defp deps do
     [{:phoenix, "~> 1.3.0-rc"},
      {:phoenix_pubsub, "~> 1.0"},
-     {:gettext, "~> 0.11"}, 
-     {:crowdreview, in_umbrella: true}, 
+     {:phoenix_html, "~> 2.6"},
+     {:phoenix_live_reload, "~> 1.0", only: :dev},
+     {:gettext, "~> 0.11"},
+     {:crowdreview, in_umbrella: true},
      {:cowboy, "~> 1.0"}]
   end
 
