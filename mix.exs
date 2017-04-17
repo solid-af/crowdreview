@@ -1,4 +1,7 @@
 defmodule CrowdReview.Umbrella.Mixfile do
+  @moduledoc """
+  Set up top level dependencies for the project.
+  """
   use Mix.Project
 
   def project do
